@@ -2,21 +2,26 @@
   src: url("https://cdn.ziqx.in/f/fonts/fxB.ttf");
   font-family: "fxBold";
 }
+
 @font-face {
   src: url("https://cdn.ziqx.in/f/fonts/fxL.ttf");
   font-family: "fxLight";
 }
+
 @font-face {
   src: url("https://cdn.ziqx.in/f/fonts/fxM.ttf");
   font-family: "fxMedium";
 }
+
 @font-face {
   src: url("https://cdn.ziqx.in/f/fonts/fxR.ttf");
   font-family: "fxRegular";
 }
+
 .fx-alert {
   padding: 20px;
   margin: 10px;
+  border-radius: 3px;
 }
 
 .warning {
@@ -54,61 +59,154 @@ button {
   padding: 10px 25px;
   color: #fff;
   border: none;
+  border-radius: 3px;
+  border: 2px solid #040404;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  font-weight: bold;
 }
 
-input[type=text] {
-  height: 25px;
-  padding: 5px;
-  outline: none;
-  transition: 0.5s all ease;
-}
-input[type=text]:focus {
-  outline: none;
-  border: none;
-  border: 1px solid #040404;
+button:hover {
+  color: #040404;
+  border: 2px solid #040404;
+  background: #fff;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
 }
 
-input[type=password] {
-  height: 25px;
-  padding: 5px;
-  outline: none;
-  transition: 0.5s all ease;
-}
-input[type=password]:focus {
-  outline: none;
+.alert-btn {
+  background: #F2506E;
+  padding: 10px 25px;
+  color: #fff;
   border: none;
-  border: 1px solid #040404;
+  border-radius: 3px;
+  border: 2px solid #F2506E;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  font-weight: bold;
+}
+
+.alert-btn:hover {
+  color: #F2506E;
+  border: 2px solid #F2506E;
+  background: #fff;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.success-btn {
+  background: #32D296;
+  padding: 10px 25px;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  border: 2px solid #32D296;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  font-weight: bold;
+}
+
+.success-btn:hover {
+  color: #32D296;
+  border: 2px solid #32D296;
+  background: #fff;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+select:focus {
+  outline: none;
+  border: 3px solid rgba(0, 0, 0, 0.4);
+}
+
+input[type='text'] {
+  width: 100%;
+  height: 25px;
+  padding: 5px 10px;
+  outline: none;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+input[type='text']:focus {
+  outline: none;
+  border: 3px solid rgba(0, 0, 0, 0.4);
+}
+
+input[type='password'] {
+  width: 100%;
+  height: 25px;
+  padding: 5px 10px;
+  outline: none;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+input[type='password']:focus {
+  outline: none;
+  border: 3px solid rgba(0, 0, 0, 0.4);
 }
 
 textarea {
+  width: 100%;
   height: 25px;
-  padding: 5px;
+  padding: 5px 10px;
   outline: none;
+  -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
-}
-textarea:focus {
-  outline: none;
-  border: none;
-  border: 1px solid #040404;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
 }
 
-input[type=submit] {
+textarea:focus {
+  outline: none;
+  border: 3px solid rgba(0, 0, 0, 0.4);
+}
+
+input[type='submit'] {
   background: #040404;
   padding: 10px 25px;
   color: #fff;
   border: none;
+  border-radius: 3px;
+  border: 2px solid #040404;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  font-weight: bold;
 }
 
-select {
-  height: 25px;
-  padding: 5px;
-  outline: none;
-  transition: 0.5s all ease;
+input[type='submit']:hover {
+  color: #040404;
+  border: 2px solid #040404;
+  background: #fff;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
 }
-select:focus {
-  outline: none;
-  border: none;
-  border: 1px solid #040404;
+
+::-webkit-input-placeholder {
+  color: grey;
+}
+
+:-ms-input-placeholder {
+  color: grey;
+}
+
+::-ms-input-placeholder {
+  color: grey;
 }
 
 ::placeholder {
@@ -117,28 +215,39 @@ select:focus {
 
 .fx-row {
   min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: stretch;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .wrap {
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .fx-card {
   padding: 0px;
-  box-shadow: 5px 13px 30px -12px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 5px 13px 30px -12px rgba(0, 0, 0, 0.05);
+          box-shadow: 5px 13px 30px -12px rgba(0, 0, 0, 0.05);
   margin: 10px;
-  transition: 0.5s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
+
 .fx-card img {
   width: 100%;
 }
+
 .fx-card:hover {
-  box-shadow: 5px 13px 30px -12px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 5px 13px 30px -12px rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 13px 30px -12px rgba(0, 0, 0, 0.2);
 }
 
 .fx-card-body {
@@ -150,16 +259,19 @@ select:focus {
     width: 100%;
   }
 }
+
 @media (min-width: 700px) and (max-width: 1200px) {
   .fx-col {
     width: 50%;
   }
 }
+
 @media (min-width: 1200px) {
   .fx-col {
     width: 33%;
   }
 }
+
 .rounded {
   border-radius: 15px;
 }
@@ -181,11 +293,15 @@ select:focus {
 }
 
 .shadow {
-  box-shadow: 5px 13px 30px -12px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 5px 13px 30px -12px rgba(0, 0, 0, 0.1);
+          box-shadow: 5px 13px 30px -12px rgba(0, 0, 0, 0.1);
+  -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
 }
+
 .shadow:hover {
-  box-shadow: 5px 13px 30px -12px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 5px 13px 30px -12px rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 13px 30px -12px rgba(0, 0, 0, 0.3);
 }
 
 .fullWidth {
@@ -197,23 +313,33 @@ select:focus {
 }
 
 .flex1 {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .flex2 {
-  flex: 2;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
 }
 
 .flex3 {
-  flex: 3;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
 }
 
 .flex4 {
-  flex: 4;
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
 }
 
 .flex5 {
-  flex: 5;
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
 }
 
 .pad10 {
@@ -224,14 +350,21 @@ select:focus {
   padding: 20px;
 }
 
+fx-red-strip, fx-green-strip, fx-blue-strip {
+  border: 2px solid transparent;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+}
+
 fx-red-strip {
   background: #FEF4F6;
   color: #F2506E;
   border-radius: 25px;
   padding: 3px 6px;
 }
+
 fx-red-strip:before {
-  content: "\a";
+  content: "\A";
   background: #F2506E;
   width: 10px;
   height: 10px;
@@ -239,9 +372,17 @@ fx-red-strip:before {
   display: inline-block;
   margin: 0 5px;
 }
+
 fx-red-strip:after {
   content: "";
   margin: 0 3px;
+}
+
+fx-red-strip:hover {
+  border: 2px solid #F2506E;
+  background: #fff;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
 }
 
 fx-green-strip {
@@ -250,8 +391,9 @@ fx-green-strip {
   border-radius: 25px;
   padding: 3px 6px;
 }
+
 fx-green-strip:before {
-  content: "\a";
+  content: "\A";
   background: #32D296;
   width: 10px;
   height: 10px;
@@ -259,9 +401,17 @@ fx-green-strip:before {
   display: inline-block;
   margin: 0 5px;
 }
+
 fx-green-strip:after {
   content: "";
   margin: 0 3px;
+}
+
+fx-green-strip:hover {
+  border: 2px solid #32D296;
+  background: #fff;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
 }
 
 fx-blue-strip {
@@ -270,8 +420,9 @@ fx-blue-strip {
   border-radius: 25px;
   padding: 3px 6px;
 }
+
 fx-blue-strip:before {
-  content: "\a";
+  content: "\A";
   background: #1E87F0;
   width: 10px;
   height: 10px;
@@ -279,9 +430,17 @@ fx-blue-strip:before {
   display: inline-block;
   margin: 0 5px;
 }
+
 fx-blue-strip:after {
   content: "";
   margin: 0 3px;
+}
+
+fx-blue-strip:hover {
+  border: 2px solid #1E87F0;
+  background: #fff;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
 }
 
 .fx-red {
@@ -303,15 +462,16 @@ fx-blue-strip:after {
 }
 
 @font-face {
-  font-family: "Material Icons";
+  font-family: 'Material Icons';
   font-style: normal;
   font-weight: 400;
   src: url(https://example.com/MaterialIcons-Regular.eot);
   /* For IE6-8 */
   src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"), url(https://example.com/MaterialIcons-Regular.woff) format("woff"), url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
 }
+
 .fx-icon {
-  font-family: "Material Icons";
+  font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
   font-size: 24px;
@@ -326,7 +486,8 @@ fx-blue-strip:after {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
-  font-feature-settings: "liga";
+  -webkit-font-feature-settings: 'liga';
+          font-feature-settings: 'liga';
   position: relative;
   top: 5px;
   left: 5px;
@@ -341,5 +502,4 @@ fx-blue-strip:after {
 body {
   font-family: "fxRegular";
 }
-
 /*# sourceMappingURL=fabex.v1.css.map */

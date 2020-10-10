@@ -6,10 +6,12 @@
 .fx-alert{
 padding: 20px;
 margin: 10px;
+border-radius: 3px;
 }
 .warning{
   background: $alertWarning;
   color: $redText;
+  
 }
 .success{
   background: $alertSuccess;
@@ -29,3 +31,4 @@ margin: 10px;
 #closeB{
   @include close($blueText);
 }
+

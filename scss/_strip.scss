@@ -18,21 +18,40 @@
   }
 }
 
+@mixin  border($color) {
+  border: 2px solid $color;
+  background: #fff;
+  transition: .4s ease;
+}
+
+fx-red-strip, fx-green-strip, fx-blue-strip{
+  border: 2px solid transparent;
+  transition: .4s ease;
+
+}
+
 fx-red-strip{
   background: $alertWarning;
   color:$redText;
   @include beforeDot($redText);
+  &:hover{
+    @include border($redText);
+  }
 }
 fx-green-strip{
   background: $alertSuccess;
   color:$greenText;
   @include beforeDot($greenText);
+  &:hover{
+    @include border($greenText);
+  }
 
 }
 fx-blue-strip{
   background: $alertDefault;
   color:$blueText;
-
   @include beforeDot($blueText);
-
+  &:hover{
+    @include border($blueText);
+  }
 }
