@@ -1,0 +1,23 @@
+
+@import "./scss/_var";
+@import "./scss/_alert";
+@import "./scss/_input";
+@import "./scss/_matrix";
+@import "./scss/_card";
+@import "./scss/_mediaQuery";
+@import "./scss/_utils";
+@import "./scss/_strip";
+@import "./scss/_span";
+@import "./scss/_icon";
+
+
+
+
+
+*{
+  text-decoration: none;
+  margin: 0;
+}
+body{
+    font-family: "fxRegular";
+}

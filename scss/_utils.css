@@ -1,0 +1,65 @@
+.rounded {
+  border-radius: 15px;
+}
+
+.no-rounded {
+  border-radius: 0px;
+}
+
+.rounded-top {
+  border-radius: 15px 15px 0px 0px;
+}
+
+.rounded-bottom {
+  border-radius: 0px 0px 15px 15px;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.shadow {
+  box-shadow: 5px 13px 30px -12px rgba(0, 0, 0, 0.1);
+  transition: 0.5s all ease;
+}
+.shadow:hover {
+  box-shadow: 5px 13px 30px -12px rgba(0, 0, 0, 0.3);
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.halfWidth {
+  width: 50%;
+}
+
+.flex1 {
+  flex: 1;
+}
+
+.flex2 {
+  flex: 2;
+}
+
+.flex3 {
+  flex: 3;
+}
+
+.flex4 {
+  flex: 4;
+}
+
+.flex5 {
+  flex: 5;
+}
+
+.pad10 {
+  padding: 10px;
+}
+
+.pad20 {
+  padding: 20px;
+}
+
+/*# sourceMappingURL=_utils.css.map */

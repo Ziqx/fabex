@@ -1,0 +1,14 @@
+.fx-row {
+  min-height: 100%;
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.wrap {
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+/*# sourceMappingURL=_matrix.css.map */

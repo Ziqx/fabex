@@ -1,0 +1,20 @@
+//phone
+@media (min-width:100px) and (max-width:700px){
+  .fx-col{
+    width: 100%;
+  }
+}
+//tablets
+@media (min-width:700px) and (max-width:1200px){
+  .fx-col{
+    width: 50%;
+  }
+}
+
+//laptop
+@media (min-width:1200px){
+  .fx-col{
+    width: 33%;
+  }
+
+}

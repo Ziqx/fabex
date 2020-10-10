@@ -1,0 +1,43 @@
+
+@mixin buttonDefaults{
+  background: $primaryColor;
+  padding: 10px 25px;
+  color: #fff;
+  border: none;
+}
+@mixin inputDefaults{
+  height: 25px;
+  padding: 5px;
+  outline: none;
+  transition: 0.5s all ease;
+  &:focus{
+    outline: none;
+    border: none;
+    border: 1px solid $primaryColor;
+  }
+
+}
+button{
+  @include buttonDefaults();
+}
+input[type='text']{
+  @include inputDefaults();
+}
+input[type='password']{
+  @include inputDefaults();
+
+}
+textarea{
+    @include inputDefaults();
+
+}
+input[type='submit']{
+  @include buttonDefaults();
+}
+select{
+  @include inputDefaults();
+
+}
+::placeholder{
+  color: grey;
+}

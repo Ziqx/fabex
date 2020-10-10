@@ -1,0 +1,345 @@
+@font-face {
+  src: url("https://cdn.ziqx.in/f/fonts/fxB.ttf");
+  font-family: "fxBold";
+}
+@font-face {
+  src: url("https://cdn.ziqx.in/f/fonts/fxL.ttf");
+  font-family: "fxLight";
+}
+@font-face {
+  src: url("https://cdn.ziqx.in/f/fonts/fxM.ttf");
+  font-family: "fxMedium";
+}
+@font-face {
+  src: url("https://cdn.ziqx.in/f/fonts/fxR.ttf");
+  font-family: "fxRegular";
+}
+.fx-alert {
+  padding: 20px;
+  margin: 10px;
+}
+
+.warning {
+  background: #FEF4F6;
+  color: #F2506E;
+}
+
+.success {
+  background: #EDFBF6;
+  color: #32D296;
+}
+
+.defaultAlert {
+  background: #D8EAFC;
+  color: #1E87F0;
+}
+
+#closeR {
+  color: #F2506E;
+  float: right;
+}
+
+#closeG {
+  color: #32D296;
+  float: right;
+}
+
+#closeB {
+  color: #1E87F0;
+  float: right;
+}
+
+button {
+  background: #040404;
+  padding: 10px 25px;
+  color: #fff;
+  border: none;
+}
+
+input[type=text] {
+  height: 25px;
+  padding: 5px;
+  outline: none;
+  transition: 0.5s all ease;
+}
+input[type=text]:focus {
+  outline: none;
+  border: none;
+  border: 1px solid #040404;
+}
+
+input[type=password] {
+  height: 25px;
+  padding: 5px;
+  outline: none;
+  transition: 0.5s all ease;
+}
+input[type=password]:focus {
+  outline: none;
+  border: none;
+  border: 1px solid #040404;
+}
+
+textarea {
+  height: 25px;
+  padding: 5px;
+  outline: none;
+  transition: 0.5s all ease;
+}
+textarea:focus {
+  outline: none;
+  border: none;
+  border: 1px solid #040404;
+}
+
+input[type=submit] {
+  background: #040404;
+  padding: 10px 25px;
+  color: #fff;
+  border: none;
+}
+
+select {
+  height: 25px;
+  padding: 5px;
+  outline: none;
+  transition: 0.5s all ease;
+}
+select:focus {
+  outline: none;
+  border: none;
+  border: 1px solid #040404;
+}
+
+::placeholder {
+  color: grey;
+}
+
+.fx-row {
+  min-height: 100%;
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.wrap {
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.fx-card {
+  padding: 0px;
+  box-shadow: 5px 13px 30px -12px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  transition: 0.5s all ease;
+}
+.fx-card img {
+  width: 100%;
+}
+.fx-card:hover {
+  box-shadow: 5px 13px 30px -12px rgba(0, 0, 0, 0.3);
+}
+
+.fx-card-body {
+  padding: 10px 10px;
+}
+
+@media (min-width: 100px) and (max-width: 700px) {
+  .fx-col {
+    width: 100%;
+  }
+}
+@media (min-width: 700px) and (max-width: 1200px) {
+  .fx-col {
+    width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .fx-col {
+    width: 33%;
+  }
+}
+.rounded {
+  border-radius: 15px;
+}
+
+.no-rounded {
+  border-radius: 0px;
+}
+
+.rounded-top {
+  border-radius: 15px 15px 0px 0px;
+}
+
+.rounded-bottom {
+  border-radius: 0px 0px 15px 15px;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.shadow {
+  box-shadow: 5px 13px 30px -12px rgba(0, 0, 0, 0.1);
+  transition: 0.5s all ease;
+}
+.shadow:hover {
+  box-shadow: 5px 13px 30px -12px rgba(0, 0, 0, 0.3);
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.halfWidth {
+  width: 50%;
+}
+
+.flex1 {
+  flex: 1;
+}
+
+.flex2 {
+  flex: 2;
+}
+
+.flex3 {
+  flex: 3;
+}
+
+.flex4 {
+  flex: 4;
+}
+
+.flex5 {
+  flex: 5;
+}
+
+.pad10 {
+  padding: 10px;
+}
+
+.pad20 {
+  padding: 20px;
+}
+
+fx-red-strip {
+  background: #FEF4F6;
+  color: #F2506E;
+  border-radius: 25px;
+  padding: 3px 6px;
+}
+fx-red-strip:before {
+  content: "\a";
+  background: #F2506E;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+}
+fx-red-strip:after {
+  content: "";
+  margin: 0 3px;
+}
+
+fx-green-strip {
+  background: #EDFBF6;
+  color: #32D296;
+  border-radius: 25px;
+  padding: 3px 6px;
+}
+fx-green-strip:before {
+  content: "\a";
+  background: #32D296;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+}
+fx-green-strip:after {
+  content: "";
+  margin: 0 3px;
+}
+
+fx-blue-strip {
+  background: #D8EAFC;
+  color: #1E87F0;
+  border-radius: 25px;
+  padding: 3px 6px;
+}
+fx-blue-strip:before {
+  content: "\a";
+  background: #1E87F0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+}
+fx-blue-strip:after {
+  content: "";
+  margin: 0 3px;
+}
+
+.fx-red {
+  background: #FEF4F6;
+  color: #F2506E;
+  padding: 3px;
+}
+
+.fx-green {
+  background: #EDFBF6;
+  color: #32D296;
+  padding: 3px;
+}
+
+.fx-blue {
+  background: #D8EAFC;
+  color: #1E87F0;
+  padding: 3px;
+}
+
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot);
+  /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"), url(https://example.com/MaterialIcons-Regular.woff) format("woff"), url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
+}
+.fx-icon {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "liga";
+  position: relative;
+  top: 5px;
+  left: 5px;
+  margin-right: 10px;
+}
+
+* {
+  text-decoration: none;
+  margin: 0;
+}
+
+body {
+  font-family: "fxRegular";
+}
+
+/*# sourceMappingURL=fabex.v1.css.map */

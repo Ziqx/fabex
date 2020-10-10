@@ -1,0 +1,15 @@
+.fx-red{
+  background: $alertWarning;
+  color:$redText;
+  padding: 3px;
+}
+.fx-green{
+  background: $alertSuccess;
+  color:$greenText;
+  padding: 3px;
+}
+.fx-blue{
+  background: $alertDefault;
+  color:$blueText;
+  padding: 3px;
+}

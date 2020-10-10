@@ -1,0 +1,15 @@
+.fx-card{
+  padding: 0px;
+  box-shadow: 5px 13px 30px -12px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  transition: 0.5s all ease;
+  img{
+    width: 100%;
+  }
+  &:hover{
+    box-shadow: 5px 13px 30px -12px rgba(0, 0, 0, 0.3);
+  }
+}
+.fx-card-body{
+  padding: 10px 10px;
+}

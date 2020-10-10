@@ -1,0 +1,38 @@
+@mixin beforeDot($color){
+  border-radius: 25px;
+    padding: 3px 6px;
+  &:before{
+    content: "\A";
+    background: $color;
+    width:10px;
+     height:10px;
+    border-radius: 50%;
+     display:inline-block;
+     margin:0 5px;
+
+  }
+  &:after{
+    content: "";
+     margin:0 3px;
+
+  }
+}
+
+fx-red-strip{
+  background: $alertWarning;
+  color:$redText;
+  @include beforeDot($redText);
+}
+fx-green-strip{
+  background: $alertSuccess;
+  color:$greenText;
+  @include beforeDot($greenText);
+
+}
+fx-blue-strip{
+  background: $alertDefault;
+  color:$blueText;
+
+  @include beforeDot($blueText);
+
+}
